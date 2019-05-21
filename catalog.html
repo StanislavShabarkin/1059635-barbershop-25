@@ -18,7 +18,7 @@
           <li><a href="#">Контакты</a></li>
         </ul>
         <ul class="sign-in">
-          <li class="sign-in-link">Вход</li>
+            <li class="sign-in-link"><a href="login.html">Вход</a></li>
         </ul>
       </nav>
     </header>
@@ -31,7 +31,64 @@
           </ul>
           <section class="filters">
             <h2 class="visually-hidden">Фильтр товаров</h2>
-            <!-- Здесь будет форма -->
+            <form action="https://echo.htmlacademy.ru" method="GET">
+            <fieldset>
+              <legend>Производители:</legend>
+                  <ul>
+                    <li>
+                      <label for="Baxter of California">
+                        <input type="checkbox" id="Baxter of California" name="Baxter of California" checked>Baxter of California
+                      </label>
+                    </li>
+                    <li>
+                      <label for="Mr Natty">
+                        <input type="checkbox" id="Mr Natty" name="Mr Natty">Mr Natty
+                      </label>
+                    </li>
+                    <li>
+                      <label for="Suavecito">
+                        <input type="checkbox" id="Suavecito" name="Suavecito" checked>Suavecito
+                      </label>
+                    </li>
+                    <li>
+                      <label for="Malin+Goetz">
+                        <input type="checkbox" id="Malin+Goetz" name="Malin+Goetz" >Malin+Goetz
+                      </label>
+                    </li>
+                    <li>
+                      <label for="Murray’s">
+                        <input type="checkbox" id="Murray’s" name="Murray’s">Murray’s
+                      </label>
+                    </li>
+                    <li>
+                      <label for="American Crew">
+                        <input type="checkbox" id="American Crew" name="American Crew" checked>American Crew
+                      </label>
+                    </li>
+                  </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Группы товаров:</legend>
+                <ul>
+                  <li>
+                    <label for="shave">
+                        <input type="radio" name="product" id="shave">Бритвенные принадлежности
+                    </label>
+                  </li>
+                    <li>
+                      <label for="care">
+                        <input type="radio" name="product" id="care">Средства для ухода
+                      </label>
+                    </li>
+                  <li>
+                    <label for="accessories">
+                      <input type="radio" name="product" id="accessories">Аксессуары
+                    </label>
+                  </li>
+                </ul>
+            </fieldset>
+            <button type="submit">Показать</button>
+          </form>
           </section>
           <section class="catalog">
               <h2 class="visually-hidden">Список средств для ухода</h2>
